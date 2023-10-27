@@ -2,6 +2,8 @@
 App which is created using MVVM architecture and Room DB. Implemented a nice UI to support the various functionalities within the App. 
 Check the demo video and screenshots below.
 Screenshots:
+
+
 ![Screenshot_2023-10-27-16-00-32-18_cdd77ce0ce1a5f9deeb9483100e44464](https://github.com/PriyogopalSingha/EasyHomeShopping/assets/79001314/b56425d7-35c5-42d2-b946-b62e965b5227)
 ![Screenshot_2023-10-27-16-01-03-81_cdd77ce0ce1a5f9deeb9483100e44464](https://github.com/PriyogopalSingha/EasyHomeShopping/assets/79001314/2c08e1d9-f4a3-4920-9948-b2232aa88a91)
 ![Screenshot_2023-10-27-16-00-42-81_cdd77ce0ce1a5f9deeb9483100e44464](https://github.com/PriyogopalSingha/EasyHomeShopping/assets/79001314/1807aa26-78fd-4c59-8576-9de73308df57)
