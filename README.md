@@ -1,5 +1,5 @@
 # EasyHomeShopping
-App which is created using MVVM architecture and Room DB. Implemented a nice UI to support the various functionalities within the App. 
+Android App which is created using MVVM architecture and Room DB following modern coding practices and tools. Implemented a nice UI to support the various functionalities within the App. 
 Check the demo video and screenshots below.
 Screenshots:
 
