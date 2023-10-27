@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/shoppingFragment">
+
+    <fragment
+        android:id="@+id/shoppingFragment"
+        android:name="com.dullgames.easyhomeshopping.ui.ShoppingFragment"
+        android:label="ShoppingFragment"
+        tools:layout="@layout/shopping_main_screen"
+        >
+        <action
+            android:id="@+id/action_shoppingFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+        <action
+            android:id="@+id/action_shoppingFragment_to_favoritesFragment"
+            app:destination="@id/favoritesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.dullgames.easyhomeshopping.ui.CartFragment"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" />
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.dullgames.easyhomeshopping.ui.FavoritesFragment"
+        android:label="fragment_favorites"
+        tools:layout="@layout/fragment_favorites" >
+        <action
+            android:id="@+id/action_favoritesFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+    </fragment>
+</navigation>

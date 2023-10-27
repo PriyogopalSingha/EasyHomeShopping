@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Profile" android:id="@+id/item_profile" />
+    <item android:title="Follow Us" android:id="@+id/item_follow_us"/>
+    <item android:title="Rate Us!"  android:id="@+id/item_rate_us"/>
+</menu>

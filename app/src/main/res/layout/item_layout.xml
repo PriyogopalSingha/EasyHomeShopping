@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="120dp"
+    android:layout_height="130dp"
+    android:layout_margin="6dp"
+    app:cardElevation="12dp"
+    app:cardCornerRadius="12dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/card_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
+
+        <ImageView
+            android:id="@+id/item_imageview"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="4dp"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <uk.bandev.xplosion.XplosionView
+            android:id="@+id/xplosion"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/item_imageview"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/like_imageview"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/heart_selector" />
+
+        </uk.bandev.xplosion.XplosionView>
+
+        <TextView
+            android:id="@+id/item_title_textview"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:maxLines="1"
+            android:fontFamily="@font/poppins_light"
+            android:ellipsize="end"
+            app:layout_constraintTop_toBottomOf="@id/item_imageview"
+            app:layout_constraintBottom_toTopOf="@+id/item_price_textview"
+            app:layout_constraintStart_toStartOf="parent"
+            tool:text="Carrot" />
+
+        <TextView
+            android:id="@+id/item_price_textview"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:fontFamily="@font/poppins_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tool:text="Price" />
+
+        <ImageButton
+            android:id="@+id/addProductButton"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:backgroundTint="@color/orange"
+            android:layout_marginBottom="2dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/xplosion"
+            app:layout_constraintStart_toStartOf="@+id/xplosion"
+            app:srcCompat="@drawable/add_icon" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
